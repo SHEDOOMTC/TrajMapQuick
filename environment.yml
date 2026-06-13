@@ -1,0 +1,19 @@
+name: tmq
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - mdtraj
+  - seaborn
+  - tqdm
+  - biopython
+  - scipy
+  - netcdf4
+  - colorama
+  - pip
+  
+  - pip:
+      - -e .

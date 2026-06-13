@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmq"
+version = "1.1"
+description = "TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization"
+authors = [
+    { name = "Wande M. Oluyemi (PhD)" },
+    { name = "Adeniyi T. Adewumi (PhD)" },
+    { name = "Shadrach C. Eze" },
+    { name = " @ Research Laboratory for Rational Design of Drugs and Biomaterials (ResLaR Labs)"},
+    { name = "Afe Babalola University, Ado-Ekiti Nigeria"}
+]
+
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+    "biopython",
+    "scipy",
+    "netcdf4",
+    "colorama"
+]
+
+[project.optional-dependencies]
+md = ["mdtraj"]
+
+[project.urls]
+Homepage = "https://github.com/SHEDOOMTC/TrajMapQuick.git"
+Documentation = "https://github.com/SHEDOOMTC/TrajMapQuick.git"
+DOI = "https://github.com/SHEDOOMTC/TrajMapQuick.git"
+
+[project.scripts]
+tmq = "tmq.cli:main"

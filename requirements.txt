@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+seaborn
+mdtraj
+tqdm
+biopython
+scipy
+netcdf4
+colorama
