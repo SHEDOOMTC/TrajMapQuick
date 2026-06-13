@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/TrajMapQuick.png" alt="TrajMapQuick Logo" />
+  <img src="https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/assets/TrajMapQuick.png" alt="TrajMapQuick Logo" />
 </p>
 
 ## **Overview**
@@ -139,13 +139,13 @@ Three trajectories and topologies files are included in the **[Test](./Test)** d
 
 The Utility of the shift command (using a 500 frame trajectory) was shown by the figure below:
 
-![test_traj_2_shift_graph.png](./assets/test_traj_2_shift_graph.png)
+![test_traj_2_shift_graph.png](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/assets/test_traj_2_shift_graph.png)
 
 
 **And that of the hotspot command by:**
 
 
-![test_traj_2_hotspot_graph.png](./assets/test_traj_2_hotspot_graph.png)
+![test_traj_2_hotspot_graph.png](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/assets/test_traj_2_hotspot_graph.png)
 
 
 To reproduce the figures above, download the full length trajectory (500 frames) from Zenodo doi .... and run the codes below on the CLI
@@ -163,7 +163,7 @@ tmq hotspot -tr traj_9NSR_500.nc -to topol_9NSR.prmtop -st 1 -rr 1-378 -ce backb
 
 **2.** A major improvement of TrajMapQuick over TrajMap is the speed across varying **residue lengths** and **number of frames**. We evaluated a 1000 frame trajectory (at 100 frame interval) over 800 residues (at 100 residue interval) in TrajMapQuick for both subcommands (shift & hotspot). The **performance plots below:** 
 
-![performance plots](./assets/Performance_shift_hotspot.png) 
+![performance plots](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/assets/Performance_shift_hotspot.png?raw=true) 
 
 shows clear scaling with number of residues and frames, with completion time between **2-5 mins**. Compared to TrajMapQuick, a single 500 frame calculations across 800 residues took around **10 minutes** in TrajMap, besides the manual editing of input parameters.
 
