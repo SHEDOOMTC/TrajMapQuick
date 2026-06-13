@@ -32,7 +32,7 @@ md = ["mdtraj"]
 
 [project.urls]
 Homepage = "https://github.com/SHEDOOMTC/TrajMapQuick.git"
-Documentation = "https://github.com/SHEDOOMTC/TrajMapQuick.git"
+Documentation = "https://github.com/SHEDOOMTC/TrajMapQuick/blob/7997b0076a6c31bd725dba3ccdca4349b43250d4/README.md"
 DOI = "https://github.com/SHEDOOMTC/TrajMapQuick.git"
 
 [project.scripts]
