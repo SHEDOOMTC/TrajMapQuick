@@ -134,7 +134,7 @@ jupyter notebook Python_API.ipynb
 All library requirements are pre-installed installed via pip or conda and are available for use in CLI or via Python API
 
 ## **Examples**
-Three trajectories and topologies files are included in the **[Test](./Test)** directory for users to try out the codes. Trajectory 1 has only 125 frames (from apo strucuture of PDB ID: 8EM8 with 789 residues) while others have 250 frames (from apo and bound strucutres of BACE1, with 389 residues). To get the full sized trajectories, see zenodo doi ....
+Three trajectories and topologies files are included in the **[Test](./Test)** directory for users to try out the codes. Trajectory 1 has only 125 frames (from apo strucuture of PDB ID: 8EM8 with 789 residues) while others have 250 frames (from apo and bound strucutres of BACE1, with 389 residues). To get the full sized trajectories, see [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20681326.svg)](https://doi.org/10.5281/zenodo.20681326)
 
 
 The Utility of the shift command (using a 500 frame trajectory) was shown by the figure below:
@@ -148,7 +148,7 @@ The Utility of the shift command (using a 500 frame trajectory) was shown by the
 ![test_traj_2_hotspot_graph.png](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/assets/test_traj_2_hotspot_graph.png)
 
 
-To reproduce the figures above, download the full length trajectory (500 frames) from Zenodo doi .... and run the codes below on the CLI
+To reproduce the figures above, download the full length trajectory (500 frames) from Zenodo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20681326.svg)](https://doi.org/10.5281/zenodo.20681326) and run the codes below on the CLI
 
 ```bash
 #The exact codes used to produce the results above
