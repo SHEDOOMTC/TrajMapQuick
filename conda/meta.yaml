@@ -1,0 +1,39 @@
+package:
+  name: tmq
+  version: "1.0"
+
+source:
+  path: ..
+
+build:
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  build:
+    - python
+    - pip
+    - setuptools
+    - wheel
+  
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - numpy
+    - pandas
+    - matplotlib
+    - mdtraj
+    - scipy
+    - seaborn
+    - biopython
+    - scipy
+    - netcdf4
+    - colorama
+
+about:
+  home: "https://github.com/SHEDOOMTC/TrajMapQuick.git"
+  license: MIT
+  summary: "TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization"
+
