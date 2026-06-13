@@ -52,7 +52,7 @@ def main():
           """ + Style.RESET_ALL)
     print("========== Welcome to TrajMapQuick 1.0 ==========")
     print("")
-    print("Authors : " + Fore.BLUE + "Wande M. Oluyemi, Adeniyi T. Adewumi, & Shadrach C. Eze @ ResLaR Labs, Afe Babalola University, Ado-Ekiti Nigeria" + Style.RESET_ALL)
+    print("Authors : " + Fore.BLUE + "Wande M. Oluyemi, Adeniyi T. Adewumi, Shadrach C. Eze & Stephen C. Nnemolisa @ ResLaR Labs, Afe Babalola University, Ado-Ekiti Nigeria" + Style.RESET_ALL)
     print("")
     print("")
 
@@ -246,5 +246,5 @@ def main():
     else:
         parser.print_help()
         print("")
-        print("Cite this as: " + Fore.BLUE + "Oluyemi et al 2026, 'TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization' https://github.com/SHEDOOMTC/TrajMapQuick.git" + Style.RESET_ALL)
+        print("Cite this as: " + Fore.BLUE + "SHEDOOMTC. (2026). TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization (v1.0). Zenodo. https://doi.org/10.5281/zenodo.20681061" + Style.RESET_ALL)
         print("")
