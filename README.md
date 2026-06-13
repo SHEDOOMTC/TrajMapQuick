@@ -181,6 +181,17 @@ Contributions are welcome. Please submit a pull request with your changes.
 
 ## **Contact**
 
-Cite this as **Oluyemi et al 2026, "TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization" https://github.com/SHEDOOMTC/TrajMapQuick.git**
-
 For questions or issues, please contact us @ [Reslar Labs](reslarscience@gmail.com)  **&copy; 2026**, or [Dr. Oluyemi](oluyemiwm@abuad.edu.ng) or [Shadrach Eze](shadrachchinecheremeze@gmail.com).
+
+
+## **Citation**
+
+If you use TrajMapQuick, please cite: SHEDOOMTC. (2026). TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization (v1.0). Zenodo. https://doi.org/10.5281/zenodo.20681061
+
+**Software:**  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20681061.svg)](https://doi.org/10.5281/zenodo.20681061)
+
+**Dataset:**  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20681326.svg)](https://doi.org/10.5281/zenodo.20681326)
+
+
