@@ -60,7 +60,7 @@ TrajMapQuick/
 ## **Installation**
 ```bash
 # Clone the repo
-git clone https://github.com/SHEDOOMTC/TrajMapQuick.git & cd TrajMapQuick
+git clone https://github.com/SHEDOOMTC/TrajMapQuick.git && cd TrajMapQuick
 
 # In conda environment with pip
 conda create -n tmq python=3.10 
