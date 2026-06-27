@@ -76,7 +76,7 @@ Use tmq --help to see the arguments
 ```
 ## **Commands**
 ```bash
-#TrajMapQuick uses a two levell subcommand from the global "tmq" command
+#TrajMapQuick uses a four levell subcommand from the global "tmq" command
 tmq  shift  : Extract matrices, compute residue-residue shifts and make plots: For more, use tmq shift --help
 
 tmq hotspot : Detect hotspots in residue shifts and create plots: For more, use tmq hotspot --help
