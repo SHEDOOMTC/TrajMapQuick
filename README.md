@@ -90,7 +90,7 @@ tmq average   Computes average of n matrices and creates the average map: For mo
 ```bash
 # For tmq shift, arguments are passed into the flags for trajectory, topology etc.
 
-tmq shift --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 --resrs 110-125 --cent backbone --plot --out shift_output
+tmq shift --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 --resrs 110-125 --cent backbone --out shift_output
 
 #for tmq hotspot, arguments are passed similiarly, except that the region of shift is not provided
 
