@@ -172,6 +172,9 @@ shows clear scaling with number of residues and frames, with completion time bet
 
 **4.** TrajMapQuick allows you to work on any continous chunk of your protein, say residues 300-360 of a 500-residues protein. This reduces time and allows one to focus.
 
+## **Tutorials**
+A video tutorial on the usage of **TrajMapQuick** is available **[here](https://youtu.be/iU6CaBQL8FU?si=EM2Hdk9ZednyJINj)**
+
 ## **Contributing**
 Contributions are welcome. Please submit a pull request with your changes.
 
