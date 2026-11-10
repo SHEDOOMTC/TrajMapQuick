@@ -13,10 +13,6 @@ We have also extended the code to allow for automatic detection of regions with 
 - **Hotspot Detection and Plotting:** This automatically probes and detects regions of high fluctuations and computes the residual shift for each region for downstream processing.
 - **Hotspot Annotation:** An RMSF like plot is also generated with the key hotspots highlight for visual confirmation and inspection.
 
-## **Project Structure**
-
-See **[Github](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/README.md)**
-
 ## **Installation**
 
 ### **From Source**
@@ -43,92 +39,11 @@ pip install tmquick
 conda install -c conda-forge mdtraj
 ```
 
-## **Commands**
-```bash
-#TrajMapQuick uses a four levell subcommand from the global "tmq" command
-tmq  shift  : Extract matrices, compute residue-residue shifts and make plots:
- For more, use tmq shift --help
 
-tmq hotspot : Detect hotspots in residue shifts and create plots:
-  For more, use tmq hotspot --help
+## **Usage**
 
-tmq diff:     Computes difference between two matrices and creates
-  the difference map: For more, use tmq diff --help
+**See [Github](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/README.md)**
 
-tmq average   Computes average of n matrices and creates the average map:
-  For more, use tmq average --help
-
-```
-## **Usage (CLI)**
-```bash
-# For tmq shift, arguments are passed into the flags for trajectory, topology etc.
-
-tmq shift --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 \
- --resrs 110-125 --cent backbone --out shift_output
-
-#for tmq hotspot, arguments are passed similiarly, the region of shift is not provided
-
-tmq hotspot --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 \
-  --cent backbone --out hotspot_output
-```
-## **Usage (Python API)**
-The core modules in the tmq library are clearly demonstrated in the 
-  **[Python_API.ipynb](./Notebooks/Python_API.ipynb)** file
- 
-```python
-#Typical modules are loaded and then used as explained in the jupyter notebook above:
-
-from tmq.core.traj2pdb import traj2pdb
-from tmq.core.pdb2csv import pdb2csv  
-from tmq.core.trajmap import trajmap
-from tmq.core.csv2shift import shift
-from tmq.core.shift2graph import shift2graph
-from tmq.core.hotspot import detect_shifts
-from tmq.core.hotspot import create_submatrices
-from tmq.core.hotspot import plot_hotspot_regions
-from tmq.core.hotspot import slice_shifts
-from tmq.core.hotspot import plot_slice_regions
-from tmq.core.diff2graph import diff_map
-from tmq.core.average_trajmap import avg_trajmap
-```
-
-```python
-# To run the notebook
-cd ./Notebooks/
-jupyter notebook Python_API.ipynb
-```
-
-## **Requirements**
-- Trajectory processing libraries (mdtraj, biopython)
-
-- Data wrangling tools (numpy, pandas)
-
-- Trajectories must have been preprocessed (strippin water, ions,) before feeding into TrajMapQuick
-
-
-All library requirements are pre-installed installed via pip or conda and are available for use in CLI or via Python API
-
-## **Examples**
-Three trajectories and topologies files are included in the **[Test](./Test)** directory for users to try out the codes. Trajectory 1 has only 125 frames (from apo strucuture of PDB ID: 8EM8 with 789 residues) while others have 250 frames (from apo and bound strucutres of BACE1, with 389 residues). To get the full sized trajectories, see [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20681326-3C5A99?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20681326)
-
-See the full examples on **[Github](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/README.md)**
-
-
-## **Improvements (Speed, Throughput and Reliability)**
-**1.** Batch processing over the CLI and Python API
-
-**2.** A major improvement of TrajMapQuick over TrajMap is the speed across varying **residue lengths** and **number of frames**. We evaluated a 1000 frame trajectory (at 100 frame interval) over 800 residues (at 100 residue interval) in TrajMapQuick for both subcommands (shift & hotspot). 
-
-See full details on **[Github](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/README.md)**
-
-**3.** The choice to select either the CA or backbone for shift calculations.
-
-**4.** Automatic Detection of hotspots using RMSF plots and generation of associated shift plots.
-
-**4.** TrajMapQuick allows you to work on any continous chunk of your protein, say residues 300-360 of a 500-residues protein. This reduces time and allows one to focus.
-
-## **Contributing**
-Contributions are welcome. Please submit a pull request with your changes.
 
 ## **License**
 [**MIT License**](../License.md)
