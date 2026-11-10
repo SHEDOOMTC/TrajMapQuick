@@ -58,6 +58,8 @@ TrajMapQuick/
 </pre>
 
 ## **Installation**
+
+### **From Source**
 ```bash
 # Clone the repo
 git clone https://github.com/SHEDOOMTC/TrajMapQuick.git && cd TrajMapQuick
@@ -74,30 +76,44 @@ conda activate tmq
 
 Use tmq --help to see the arguments
 ```
+
+### **From PyPI**
+```bash
+pip install tmquick
+conda install -c conda-forge mdtraj
+```
+
 ## **Commands**
 ```bash
 #TrajMapQuick uses a four levell subcommand from the global "tmq" command
-tmq  shift  : Extract matrices, compute residue-residue shifts and make plots: For more, use tmq shift --help
+tmq  shift  : Extract matrices, compute residue-residue shifts and make plots:
+ For more, use tmq shift --help
 
-tmq hotspot : Detect hotspots in residue shifts and create plots: For more, use tmq hotspot --help
+tmq hotspot : Detect hotspots in residue shifts and create plots:
+  For more, use tmq hotspot --help
 
-tmq diff      Computes difference between two matrices and creates the difference map: For more, use tmq diff --help
+tmq diff:     Computes difference between two matrices and creates
+  the difference map: For more, use tmq diff --help
 
-tmq average   Computes average of n matrices and creates the average map: For more, use tmq average --help
+tmq average   Computes average of n matrices and creates the average map:
+  For more, use tmq average --help
 
 ```
 ## **Usage (CLI)**
 ```bash
 # For tmq shift, arguments are passed into the flags for trajectory, topology etc.
 
-tmq shift --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 --resrs 110-125 --cent backbone --out shift_output
+tmq shift --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 \
+ --resrs 110-125 --cent backbone --out shift_output
 
-#for tmq hotspot, arguments are passed similiarly, except that the region of shift is not provided
+#for tmq hotspot, arguments are passed similiarly, the region of shift is not provided
 
-tmq hotspot --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 --cent backbone --out hotspot_output
+tmq hotspot --traj traj.pdb --top top.parmtop --str 1 --resr 1-300 \
+  --cent backbone --out hotspot_output
 ```
 ## **Usage (Python API)**
-The core modules in the tmq library are clearly demonstrated in the **[Python_API.ipynb](./Notebooks/Python_API.ipynb)** file
+The core modules in the tmq library are clearly demonstrated in the 
+  **[Python_API.ipynb](./Notebooks/Python_API.ipynb)** file
 
 ```python
 #Typical modules are loaded and then used as explained in the jupyter notebook above:
