@@ -143,9 +143,12 @@ For questions or issues, please contact us @ [Reslar Labs](reslarscience@gmail.c
 If you use TrajMapQuick, please cite: SHEDOOMTC. (2026). TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization (v1.0). Zenodo. https://doi.org/10.5281/zenodo.20681061
 
 **Software:**  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20681061.svg)](https://doi.org/10.5281/zenodo.20681061)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20681061-3C5A99?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20681061)
+
 
 **Dataset:**  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20681326.svg)](https://doi.org/10.5281/zenodo.20681326)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20681326-3C5A99?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20681326)
+
+
 
 
