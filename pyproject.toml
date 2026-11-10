@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tmquick"
-version = "1.0.6"
+version = "1.0.7"
 readme = "readme_pypi.md"
 description = "TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization"
 authors = [
