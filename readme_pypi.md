@@ -109,7 +109,7 @@ jupyter notebook Python_API.ipynb
 All library requirements are pre-installed installed via pip or conda and are available for use in CLI or via Python API
 
 ## **Examples**
-Three trajectories and topologies files are included in the **[Test](./Test)** directory for users to try out the codes. Trajectory 1 has only 125 frames (from apo strucuture of PDB ID: 8EM8 with 789 residues) while others have 250 frames (from apo and bound strucutres of BACE1, with 389 residues). To get the full sized trajectories, see [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20681326.svg)](https://doi.org/10.5281/zenodo.20681326)
+Three trajectories and topologies files are included in the **[Test](./Test)** directory for users to try out the codes. Trajectory 1 has only 125 frames (from apo strucuture of PDB ID: 8EM8 with 789 residues) while others have 250 frames (from apo and bound strucutres of BACE1, with 389 residues). To get the full sized trajectories, see [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20681326-3C5A99?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20681326)
 
 See the full examples on **[Github](https://github.com/SHEDOOMTC/TrajMapQuick/blob/main/README.md)**
 
