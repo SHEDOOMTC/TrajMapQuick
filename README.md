@@ -13,50 +13,6 @@ We have also extended the code to allow for automatic detection of regions with 
 - **Hotspot Detection and Plotting:** This automatically probes and detects regions of high fluctuations and computes the residual shift for each region for downstream processing.
 - **Hotspot Annotation:** An RMSF like plot is also generated with the key hotspots highlight for visual confirmation and inspection.
 
-## **Project Structure**
-<pre>
-TrajMapQuick/
-├── README.md                     # Project overview, installation, usage 
-├── requirements.txt              # Python dependencies
-├── setup.py                      # Packaging configuration
-├── environment.yml               # Build config
-├── pyproject.toml                # Build config 
-├── LICENSE                       # MIT license
-├── Manifest.in                   
-├── tmq/                          # Source codes and CLI wrappers lives here
-│   ├── cli.py/                   # Main command line launcher 
-│   ├── __init__.py               # Main launcher for the python API
-│   ├── core/                     # Python package folder
-│   │   ├── __init__.py
-│   │   ├── traj2pdb.py           # Converts trajectory to pdb
-│   │   ├── pdb2csv.py            # Converts pdb to distance matrix
-│   │   ├── trajmap.py            # plots the trajectory map
-│   │   ├── csv2shift.py          # Core shift logic for a given loop
-│   │   ├── shift2graph.py        # Makes shift plots for a given loop
-│   │   ├── hotspot.py            # Automatic detection of regions with peak fluctuations
-│   │   ├── diff2graph.py         # Computes and plot difference map for two trajectories
-│   │   └── average_trajmap.py    # Computes and plot average map for two trajectories
-│   ├── commands/                 # Main wrapper for the CLI
-│   │   ├── __init__.py
-│   │   ├── traj2pdb_cli.py       # CLI wrapper
-│   │   ├── pdb2csv_cli.py        # CLI wrapper
-│   │   ├── trajmap_cli.py        # CLI wrapper
-│   │   ├── csv2shift_cli.py      # CLI wrapper
-│   │   ├── shift2graph_cli.py    # CLI wrapper
-│   │   ├── hotspot_cli.py        # CLI wrapper
-│   │   ├── diff2graph_cli.py     # CLI wrapper
-│   │   └── average_trajmap_cli.py# CLI wrapper
-│   └── utils                     # Holds functions
-│   │   ├── __init__.py
-│   │   └── utils.py              # utility functions
-├── docs/                         # docstrings for the modules
-├── assets/                       # Container for images
-├── Tests/                        # Containers for test trajectories and topologies
-└── Conda/                        # Backup YAML files
-
-
-</pre>
-
 ## **Installation**
 
 ### **From Source**
@@ -137,6 +93,50 @@ from tmq.core.average_trajmap import avg_trajmap
 cd ./Notebooks/
 jupyter notebook Python_API.ipynb
 ```
+
+## **Project Structure**
+<pre>
+TrajMapQuick/
+├── README.md                     # Project overview, installation, usage 
+├── requirements.txt              # Python dependencies
+├── setup.py                      # Packaging configuration
+├── environment.yml               # Build config
+├── pyproject.toml                # Build config 
+├── LICENSE                       # MIT license
+├── Manifest.in                   
+├── tmq/                          # Source codes and CLI wrappers lives here
+│   ├── cli.py/                   # Main command line launcher 
+│   ├── __init__.py               # Main launcher for the python API
+│   ├── core/                     # Python package folder
+│   │   ├── __init__.py
+│   │   ├── traj2pdb.py           # Converts trajectory to pdb
+│   │   ├── pdb2csv.py            # Converts pdb to distance matrix
+│   │   ├── trajmap.py            # plots the trajectory map
+│   │   ├── csv2shift.py          # Core shift logic for a given loop
+│   │   ├── shift2graph.py        # Makes shift plots for a given loop
+│   │   ├── hotspot.py            # Automatic detection of regions with peak fluctuations
+│   │   ├── diff2graph.py         # Computes and plot difference map for two trajectories
+│   │   └── average_trajmap.py    # Computes and plot average map for two trajectories
+│   ├── commands/                 # Main wrapper for the CLI
+│   │   ├── __init__.py
+│   │   ├── traj2pdb_cli.py       # CLI wrapper
+│   │   ├── pdb2csv_cli.py        # CLI wrapper
+│   │   ├── trajmap_cli.py        # CLI wrapper
+│   │   ├── csv2shift_cli.py      # CLI wrapper
+│   │   ├── shift2graph_cli.py    # CLI wrapper
+│   │   ├── hotspot_cli.py        # CLI wrapper
+│   │   ├── diff2graph_cli.py     # CLI wrapper
+│   │   └── average_trajmap_cli.py# CLI wrapper
+│   └── utils                     # Holds functions
+│   │   ├── __init__.py
+│   │   └── utils.py              # utility functions
+├── docs/                         # docstrings for the modules
+├── assets/                       # Container for images
+├── Tests/                        # Containers for test trajectories and topologies
+└── Conda/                        # Backup YAML files
+
+
+</pre>
 
 ## **Requirements**
 - Trajectory processing libraries (mdtraj, biopython)
