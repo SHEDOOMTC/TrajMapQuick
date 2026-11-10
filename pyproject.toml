@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tmquick"
 version = "1.0.0"
+readme = "readme_pypi.md"
 description = "TrajMapQuick: Towards Fast Trajectory Map Analysis and Visualization"
 authors = [
     { name = "Wande M. Oluyemi (PhD)" },
